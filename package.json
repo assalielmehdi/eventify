@@ -1,0 +1,27 @@
+{
+  "name": "codespaces-blank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "test": "tap --no-check-coverage",
+    "test:watch": "tap --no-check-coverage --watch",
+    "posttest": "tap --no-check-coverage --coverage-report=text-lcov | codecov --pipe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "typescript": "^4.8.4",
+    "undici": "^5.12.0"
+  },
+  "devDependencies": {
+    "@types/tap": "^15.0.7",
+    "codecov": "^3.8.3",
+    "nodemon": "^2.0.20",
+    "tap": "^16.3.1",
+    "ts-node": "^10.9.1"
+  }
+}
